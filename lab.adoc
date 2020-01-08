@@ -23,7 +23,7 @@ Clone the `micro-frontends-lab` repo from github:
 git clone https://github.com/kito99/micro-frontends-lab.git
 ----
 
-Read the link:README.md[README file] for an overview of the project (don't follow the "Running" instructions quite yet).
+Read the link:README.md[README file] for an overview of the project.
 In this lab, we will build the Orchestrator and setup Express to serve the different micro frontends.
 
 == Client side integration

@@ -1,6 +1,8 @@
-# Micro frontends demo
+# Micro frontends lab
 
 For lab instructions, see [the lab documentation](lab.adoc).
+
+For the completed version of this lab, see https://github.com/kito99/micro-frontends-demo.
 
 This is a simple application that demonstrates one approach to creating 
 [Micro frontends](https://martinfowler.com/articles/micro-frontends.html): 
@@ -32,30 +34,3 @@ are required. (If you want polyfills, you'll need to add them from https://githu
 It's theoretically possible to include other technologies using this method, such as React via Adobe's 
 [react-webcomponent](https://github.com/adobe/react-webcomponent), or [Vue.js](https://vuejs.org/) via 
 [vue-web-component-wrapper](https://github.com/vuejs/vue-web-component-wrapper). 
-
-## Running 
-
-First, make sure you have Node (for JS/TS) and Maven (for Java) installed.
-
-1. Download dependencies and build each app as described in the individual README located in the app's folder.
-2. Run `app-three-service` as described in the project's README.
-3. Run a web server from the root folder, and point it to `orchestrator/index.html`. For simplicity, the project
-includes express, which can be used to serve the app.
-
-To setup express, install the dependencies:
-    
-```
- npm install 
-```
-
-Then run the server:
-
-```
-cd <root folder of this repo>
-node server.js
-```
-And point your browser to the URL indicated (usually `http://127.0.0.1:8000`).
-
-> Technically, all of these apps could run on separate servers (using  
-[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers) or be proxied through the main web server.
-
