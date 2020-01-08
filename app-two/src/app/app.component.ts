@@ -7,5 +7,5 @@ import {Component, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class AppComponent {
-  title = 'app-three';
+  title = 'app-two';
 }
