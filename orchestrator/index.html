@@ -3,85 +3,11 @@
 <head>
     <base href="/">
     <title>Micro Frontend Orchestrator</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            font-size: 14px;
-            color: #333;
-            line-height: 24px;
-        }
-
-        #outlet {
-            margin: 20px;
-            border-radius: 4px;
-            border: 1px solid #eee;
-            background-color: #fafafa;
-            padding: 16px;
-            transition: all 0.2s ease-in-out;
-        }
-
-        #navigation > a {
-            padding: 5px;
-            color: #ffffff;
-            border-radius: 4px;
-            border: 1px solid #eee;
-            background-color: #007ad9;
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body>
 
 <h1>Micro Frontend Orchestrator</h1>
-
-<div id="navigation">
-    <a href="/app-one">App One</a>
-    <a href="/app-two">App Two</a>
-    <a href="/app-three">App Three</a>
-</div>
-
-<div id="outlet">
-</div>
-
-<script type="module">
-
-    // In a real app, this functionality might be encapsulated into a web component or at least another JS file,
-    // and routes may be separated out into another file and loaded dynamically by the router.
-
-    import {Router} from 'https://unpkg.com/@vaadin/router/dist/vaadin-router.min.js';
-
-    const outlet = document.getElementById('outlet');
-    const router = new Router(outlet);
-
-    router.setRoutes([
-        {
-            path: '/',
-            redirect: '/app-one'
-        },
-        {
-            path: '/app-one',
-            component: 'x-app-one',
-            action: async () => {
-                await import('/app/one/app-one.js');
-            }
-        },
-        {
-            path: '/app-two',
-            component: 'x-app-two',
-            action: async () => {
-                await import('/app/two/app-two.js');
-            }
-        },
-        {
-            path: '/app-three',
-            component: 'x-app-three',
-            action: async () => {
-                await import('/app/three/app-three.js');
-            }
-        }
-    ]);
-</script>
 
 </body>
 

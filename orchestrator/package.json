@@ -1,10 +1,10 @@
 {
   "name": "micro-frontends-orchestrator",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Orchestrator for micro frontend demo.",
   "main": "index.html",
-  "dependencies": {},
-  "devDependencies": {},
-  "author": "Kito D. Mann (virtua.tech)",
+  "devDependencies": {
+    "express": "^4.17.1"
+  },
   "license": "MIT"
 }
